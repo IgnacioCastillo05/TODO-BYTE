@@ -1,0 +1,134 @@
+
+spring:
+  application:
+    name: todo-app-backend-preliminar
+  
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: America/Bogota
+    default-property-inclusion: non_null
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  error:
+    include-message: always
+    include-binding-errors: always
+
+
+logging:
+  level:
+    com.todoapp: DEBUG
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/todo-app.log
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    name: Todo App Backend
+    description: API REST para gestión de tareas (Versión Preliminar)
+    version: 1.0.0-SNAPSHOT
+    storage: In-Memory
+    database: None (Development)
+  build:
+    artifact: todo-app-backend
+    name: Todo App Backend
+    time: 2025-06-09
+    version: 1.0.0-SNAPSHOT
+
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    display-request-duration: true
+    try-it-out-enabled: true
+    filter: true
+    operations-sorter: method
+    tags-sorter: alpha
+  show-actuator: true
+  info:
+    title: "🚀 Todo App API (Preliminar)"
+    description: |
+      # 📋 API REST para Gestión de Tareas
+      
+      **Versión preliminar** para demostración y testing.
+      
+      ## ⚠️ Importante:
+      - **Almacenamiento**: En memoria (datos se pierden al reiniciar)
+      - **Base de datos**: Ninguna (para simplicidad)
+      - **Autenticación**: Simplificada (sin JWT)
+      
+      ## 🎯 Características:
+      - ✅ Gestión completa de usuarios
+      - 📝 Listas de tareas organizadas  
+      - ⭐ Tareas con prioridades
+      - 🔍 Búsquedas y filtros
+      - 📊 Estadísticas básicas
+      
+      ## 🚀 Datos de prueba incluidos:
+      - Usuario demo: `demo@todoapp.com`
+      - Lista: "Mis Tareas" 
+      - 3 tareas de ejemplo
+    version: "1.0.0-SNAPSHOT"
+    contact:
+      name: "Tu Nombre"
+      email: "tu@email.com"
+    license:
+      name: "MIT License"
+      url: "https://opensource.org/licenses/MIT"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+      
+logging:
+  level:
+    com.todoapp: DEBUG
+    
+---
+
+spring:
+  config:
+    activate:
+      on-profile: test
+
+logging:
+  level:
+    com.todoapp: WARN
+    
+---
+
+spring:
+  config:
+    activate:
+      on-profile: demo
+      
+logging:
+  level:
+    com.todoapp: INFO

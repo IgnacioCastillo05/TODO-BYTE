@@ -1,0 +1,172 @@
+2025-06-13T15:14:13.446-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Starting TodoAppApplication using Java 23.0.2 with PID 12888 (C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup\target\classes started by joseg in C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup)
+2025-06-13T15:14:13.456-05:00 DEBUG 12888 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Running with Spring Boot v3.2.6, Spring v6.1.8
+2025-06-13T15:14:13.459-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-13T15:14:13.705-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-13T15:14:13.706-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-13T15:14:17.219-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-13T15:14:17.244-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-13T15:14:17.248-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-13T15:14:17.366-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-13T15:14:17.367-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3659 ms
+2025-06-13T15:14:18.233-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-13T15:14:19.277-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-13T15:14:19.422-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-13T15:14:19.454-05:00  INFO 12888 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Started TodoAppApplication in 7.34 seconds (process running for 8.939)
+2025-06-13T15:14:38.071-05:00  INFO 12888 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-13T15:14:38.077-05:00  INFO 12888 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-13T15:14:38.122-05:00  INFO 12888 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 39 ms
+2025-06-13T15:14:44.788-05:00  INFO 12888 --- [todo-app-backend-preliminar] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 3763 ms
+2025-06-13T15:18:14.096-05:00  WARN 12888 --- [todo-app-backend-preliminar] [http-nio-8080-exec-6] c.t.exception.GlobalExceptionHandler     : Error de validación: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.todoapp.controller.UserController$UserResponse> com.todoapp.controller.UserController.registerUser(com.todoapp.controller.UserController$UserRegistrationRequest): [Field error in object 'userRegistrationRequest' on field 'email': rejected value [string]; codes [Email.userRegistrationRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegistrationRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@5f1159d1,.*]; default message [Email debe tener formato válido]] 
+2025-06-13T15:18:14.217-05:00  WARN 12888 --- [todo-app-backend-preliminar] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.todoapp.controller.UserController$UserResponse> com.todoapp.controller.UserController.registerUser(com.todoapp.controller.UserController$UserRegistrationRequest): [Field error in object 'userRegistrationRequest' on field 'email': rejected value [string]; codes [Email.userRegistrationRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegistrationRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@5f1159d1,.*]; default message [Email debe tener formato válido]] ]
+2025-06-13T15:31:36.701-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Starting TodoAppApplication using Java 23.0.2 with PID 22568 (C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup\target\classes started by joseg in C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup)
+2025-06-13T15:31:36.706-05:00 DEBUG 22568 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Running with Spring Boot v3.2.6, Spring v6.1.8
+2025-06-13T15:31:36.708-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-13T15:31:36.924-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-13T15:31:36.925-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-13T15:31:41.709-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-13T15:31:41.749-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-13T15:31:41.750-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-13T15:31:41.913-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-13T15:31:41.915-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4986 ms
+2025-06-13T15:31:42.995-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-13T15:31:44.105-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-13T15:31:44.257-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-13T15:31:44.294-05:00  INFO 22568 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Started TodoAppApplication in 9.434 seconds (process running for 10.96)
+2025-06-13T15:31:53.359-05:00  INFO 22568 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-13T15:31:53.372-05:00  INFO 22568 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-13T15:31:53.393-05:00  INFO 22568 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2025-06-13T15:31:58.072-05:00  INFO 22568 --- [todo-app-backend-preliminar] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 2770 ms
+2025-06-13T15:55:50.571-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Starting TodoAppApplication using Java 23.0.2 with PID 15688 (C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup\target\classes started by joseg in C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup)
+2025-06-13T15:55:50.578-05:00 DEBUG 15688 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Running with Spring Boot v3.2.6, Spring v6.1.8
+2025-06-13T15:55:50.581-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-13T15:55:50.820-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-13T15:55:50.826-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-13T15:55:57.488-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-13T15:55:57.531-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-13T15:55:57.535-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-13T15:55:57.696-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-13T15:55:57.701-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6860 ms
+2025-06-13T15:56:00.412-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-13T15:56:01.203-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-13T15:56:01.331-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-13T15:56:01.358-05:00  INFO 15688 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Started TodoAppApplication in 13.671 seconds (process running for 17.176)
+2025-06-13T15:56:40.991-05:00  INFO 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-13T15:56:41.001-05:00  INFO 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-13T15:56:41.028-05:00  INFO 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2025-06-13T15:56:52.946-05:00  INFO 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 5187 ms
+2025-06-13T15:59:54.955-05:00 ERROR 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-8] c.t.exception.GlobalExceptionHandler     : Error interno del servidor: 
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-06-13T15:59:54.986-05:00  WARN 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2025-06-13T15:59:55.404-05:00 ERROR 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-9] c.t.exception.GlobalExceptionHandler     : Error interno del servidor: 
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-06-13T15:59:55.415-05:00  WARN 15688 --- [todo-app-backend-preliminar] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-06-13T16:05:46.766-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Starting TodoAppApplication using Java 23.0.2 with PID 8452 (C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup\target\classes started by joseg in C:\Users\joseg\Dropbox\Mi PC (LAPTOP-DAG79SR9)\Documents\Ignacio\Programación\BYTE\todo-app-backend_backup)
+2025-06-13T16:05:46.785-05:00 DEBUG 8452 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Running with Spring Boot v3.2.6, Spring v6.1.8
+2025-06-13T16:05:46.787-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-13T16:05:47.096-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-13T16:05:47.099-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-13T16:05:54.349-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-13T16:05:54.435-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-13T16:05:54.439-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-06-13T16:05:54.773-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-13T16:05:54.775-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7673 ms
+2025-06-13T16:05:56.739-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-06-13T16:05:58.414-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-13T16:05:58.784-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-13T16:05:58.912-05:00  INFO 8452 --- [todo-app-backend-preliminar] [restartedMain] com.todoapp.TodoAppApplication           : Started TodoAppApplication in 15.203 seconds (process running for 17.779)
